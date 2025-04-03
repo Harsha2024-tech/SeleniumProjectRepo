@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="username" value="Manjusha"></parameter>
+	<parameter name="password" value="Manjusha123"></parameter>
+	<test name="parameterTest">
+	<parameter name="browsers" value="chrome"></parameter>
+		<classes>
+			<class name="maintestscript.NewAdminUserPageTest">
+				<methods>
+					<include name="verifyValuesEnteredInAllFieldsForCreatiingNewUser"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
